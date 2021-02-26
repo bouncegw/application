@@ -10,3 +10,74 @@ h1, h2, h3, h4, p {
 h1 {
     margin:auto
 }
+section{
+    width: 1440px;
+    background-color: #D5FAFC;
+}
+
+.block_left{
+    width: 705px;
+    display: inline-block;
+    background-color: #2EC5CE;
+    padding-top: 368px;
+    padding-bottom: 71px;
+    /*ПОДСКАЖИТЕ ПОЖАЙЛУСТА КАК ВЫРАВНИТЬ ПО СЕРЕДИНЕ ТЕКСТ,
+    ПО МОЕМУ МНЕНИЮ ПРИ СОЗДАНИИ ЛЕВОГО БЛОКА МЫ ЕМУ ЗАДАЛИ ТОЛЬКО ШИРИНУ И НИЧЕГО
+    БОЛЬШЕ, А ВЫСОТУ ОН ДОЛЖЕН БЫЛ УВЕЛИЧИВАТЬ С УВЕЛИЧЕНИЕМ ЛЕВОГО БЛОКА ,
+    НО ЭТОГО НЕ ПРОИЗОШЛО Я ТАК ПОНИМАЮ ОШИБКА БЫЛА В САМОМ НАЧАЛЕ НА СТАДИИ
+    СОЗДАНИЯ БЛОКОВ,ЕСЛИ ВОЗМОЖНО ОБЪЯСНИТЕ ЭТОТ МОМЕНТ В ЧЕМ ОШИБКА. СПАСИБО */
+}
+.text_left{
+    width: 445px;
+    background-color: gold;
+}
+.happy{
+    font-size: 48px;
+}
+p{
+    font-size: 18px;
+}
+.block_right{
+    width: 570px;
+    background-color: #FFFFFF;
+    display:inline-block;
+    padding-top: 40px ;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    padding-left: 40px;
+    margin-left: -4px;
+}
+.commas{
+    margin-left: 490px;
+    background-color: #FFFFFF;
+}
+.president{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.jenny{
+    width: 183px;
+    display: inline-block;
+    margin-left: 16px;    
+    /*Скажите пожайлуста как поднять блок jenny выше чтобы он был по центру относительно картинки
+    css не реагирует на margin-top и margin-bottom */ 
+
+}
+h3{
+    font-size: 18px;
+}
+h4{
+    font-size: 14px;
+}
+.big_text{
+    margin-top: 26px;
+}
+.images{
+    margin-top: 48px;
+}
+.left_arrow{
+    margin-left: 343px;
+}
+
