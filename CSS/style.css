@@ -7,3 +7,106 @@ body {
 h1, h2, h3, h4, p {
     margin: 0;
 }
+.top_text{
+    width: 540px;
+    margin-left: 275px;
+}
+h2{
+    width: 540px;
+    weight: 800px;
+    font-size: 48px;
+    text-align: center;
+}
+.container{
+    width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 64px;
+    
+}
+.block_left{
+    width: 540px;
+    display: inline-block;
+    position: relative;
+    top: 48px;
+}
+.blue_chanel{
+    position: relative;
+    margin-left: 232px;
+
+}
+.cirlce_blue{
+    position: absolute;
+    z-index: -1;
+    left: 275px;
+    top: 200px;
+}
+
+.pink_lifstick{
+    position: relative;
+    margin-top: -90px;
+    margin-left: 65px;
+
+}
+.cirlce_pink{
+    position: absolute;
+    z-index: -1;
+    left: -35px;
+    bottom: 65px;
+}
+.dark_water{
+    position: relative;
+    margin-top: -115px;
+    margin-left: 250px;
+}
+.circle_dark{
+    position: absolute;
+    z-index: -1;
+    bottom: -25px;
+    left: 160px
+}
+.block_right{
+    display: inline-block;
+    width: 444px;
+    margin-left: 78px;
+    position: relative;
+    top: 30px;
+}   
+li:nth-child(1):before{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #A0DCFF; 
+    content: "•"; 
+    padding-right: 10px; 
+}
+li:nth-child(3)::before{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #FFC3D8; 
+    content: "•"; 
+    padding-right: 10px;
+}
+li:nth-child(5)::before{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #C1E5C0; 
+    content: "•"; 
+    padding-right: 10px;
+}
+li{
+    list-style-type: none;
+}
+li{
+    weight: 600px;
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 20px;
+}
+p{
+    weight:400px;
+    font-size: 18px;
+    line-height: 32px;
+    margin-top: 8px;
+
+}
+
