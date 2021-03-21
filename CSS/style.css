@@ -2,8 +2,143 @@ body {
     font-family: "Manrope", sans-serif;  
     color: #18191f;
     box-sizing: border-box;  
+    height: 100%;
 }
 
 h1, h2, h3, h4, p {
     margin: 0;
+}
+.container{
+    max-width: 1440px;
+    min-height: 100%;
+    margin: 0 auto;
+    padding: 15px 0px 15px 0px;
+    display: flex;
+    justify-content: center;
+    vertical-align: center;
+    background-color: chocolate;
+}
+.block_left{
+    background-image: url(../img/background.jpg);
+    max-width: 666px;
+    background-repeat: no-repeat;
+    background-color: aqua;
+    overflow: hidden;
+    display: flex;
+    
+
+
+}
+.block_left_content{
+    padding: 65px 72px;
+    
+}
+.points{
+    margin-top: 118px;
+    margin-left: 350px;
+}
+.quotation{
+    margin-top: 62px;
+}
+.block_left_content_text{
+    margin-top: 40px;
+    max-width: 100%;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 38px;
+}
+.block_left_content_vincent{
+   margin-top: 22px;
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 21.78px;
+}
+.chek_mark{
+    margin-left: 10px;
+}
+.corner{
+    margin-top: 39px;
+    margin-left: 400px;
+}
+.circle{
+    margin-top: 205px;
+    margin-left: -71px;
+}
+.block_right{
+    display: flex;
+    max-width: 774px;
+    background-color: cadetblue;
+}
+.block_right_content_header{
+    background-color: brown;
+    display: flex;
+    max-width: 100%;
+}
+.arrow_back{
+    display: flex;
+    text-align: center;
+    max-width: 774px;
+}
+
+.back{
+    margin-left: 14px;
+    display: inline-block;
+}
+.step{
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16.94px;
+    color: #8692A6;
+}
+.two_stroke{
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19.36px;
+    color: #BDBDBD;
+    background-color: chartreuse;
+}
+.register{
+    margin-top: 78px; 
+    max-width: 419px;
+    min-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.register_individual{
+
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36.31px;
+}
+.register_for{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 10px;
+}
+label{
+    display: block;
+    margin-bottom: 14px;
+}
+input{
+    display: block;
+    width: 100%;
+    padding: 24px 30px 24px 30px;
+    border: 1px solid #8692A6 ;
+    box-sizing: border-box;
+    border-radius: 6px;
+    margin-bottom: 24px !important;
+    outline: none;
+    color: #494949;
+    font-weight: 500;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    transition: .3s;
+}
+form{
+    margin-top: 40px;
 }
