@@ -7,8 +7,8 @@
     <title>2 weack homework</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap" rel="stylesheet">  
-    <link rel="stylesheet" href="slick-css/slick.css">
-    <link rel="stylesheet" href="slick-css/slick-theme.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/normalize.css">
     
@@ -154,9 +154,10 @@
             <div class="block_7">
                 <div class="block_7_wrap">
                     <div class="block_7_content">
+                        <img class="points_block_7" src="img/points_block_7.svg" alt="">
                         <div class="block_header_7">
                             <h2 class="customer">What our customer are saying</h2>
-                            <img src="img/line_block_7.jpg" alt="">
+                            <hr class="line_block_7">
                         </div>
                         <div class="block_7_wrapper">
                             <div class="block_7_information">
@@ -177,9 +178,10 @@
                         </div>                   
                     </div>
                     <div class="block_7_content">
+                        <img class="points_block_7" src="img/points_block_7.svg" alt="">
                         <div class="block_header_7">
                             <h2 class="customer">What our customer are saying</h2>
-                            <img src="img/line_block_7.jpg" alt="">
+                            <hr class="line_block_7">
                         </div>
                         <div class="block_7_wrapper">
                             <div class="block_7_information">
@@ -200,9 +202,10 @@
                         </div>                   
                     </div>
                     <div class="block_7_content">
+                        <img class="points_block_7" src="img/points_block_7.svg" alt="">
                         <div class="block_header_7">
                             <h2 class="customer">What our customer are saying</h2>
-                            <img src="img/line_block_7.jpg" alt="">
+                            <hr class="line_block_7">
                         </div>
                         <div class="block_7_wrapper">
                             <div class="block_7_information">
@@ -222,13 +225,38 @@
                             </div>                  
                         </div>                   
                     </div>
+                    <div class="block_7_content">
+                        <img class="points_block_7" src="img/points_block_7.svg" alt="">
+                        <div class="block_header_7">
+                            <h2 class="customer">What our customer are saying</h2>
+                            <hr class="line_block_7">
+                        </div>
+                        <div class="block_7_wrapper">
+                            <div class="block_7_information">
+                                <div class="block_7_left">
+                                    <img class="edward" src="img/edward_block_7.jpg" alt="">
+                                    <div class="block_7_edward_left">
+                                        <h4 class="newgate" >Edward Newgate</h4>
+                                        <p class="founder">Founder Circle</p>
+                                    </div>
+                                </div>
+                                <div class="block_7_right">
+                                    <h4 class="our_dedicated" >“Our dedicated patient engagement app and 
+                                        web portal allow you to access information instantaneously (no tedeous form, long calls, 
+                                        or administrative hassle) and securely”
+                                    </h4>
+                                </div>
+                            </div>                  
+                        </div>                   
+                    </div>
+                    
                 </div>
                 
                 <img class="points_block_7_left" src="img/points_block_7_left.jpg" alt="">
-                <img class="points_block_7" src="img/points_block_7.svg" alt="">               
+                               
             </div>
             <!-- Закончил блок 7 -->
-            <div class="block_8">
+            <!-- <div class="block_8">
                 <div class="block_8_content">
                     <svg width="29" height="19" viewBox="0 0 29 19" fill="none" >
                         <path opacity='0.3' d="M26.6911 7.76265L5.64523 7.76265L10.269 3.13893C10.9067 2.50117 10.9067 1.54454 10.269 0.906783C9.6312 0.269028 8.67457 0.269028 8.03681 0.906783L0.702627 8.24097C0.0648714 8.87872 0.0648714 9.83536 0.702627 10.4731L8.03681 17.8073C8.67457 18.445 9.6312 18.445 10.269 17.8073C10.9067 17.1695 10.9067 16.2129 10.269 15.5752L5.64523 10.9514L26.6911 10.9514C27.4883 10.9514 28.2855 10.3137 28.2855 9.35704C28.2855 8.40041 27.4883 7.76265 26.6911 7.76265Z" fill="#458FF6"/>
@@ -240,7 +268,7 @@
                         <path d="M1.73745 11.2373L22.7834 11.2373L18.1596 15.8611C17.5219 16.4988 17.5219 17.4555 18.1596 18.0932C18.7974 18.731 19.754 18.731 20.3918 18.0932L27.726 10.759C28.3637 10.1213 28.3637 9.16464 27.726 8.52689L20.3918 1.1927C19.754 0.55495 18.7974 0.55495 18.1596 1.1927C17.5219 1.83046 17.5219 2.78709 18.1596 3.42485L22.7834 8.04857L1.73745 8.04857C0.940251 8.04857 0.143058 8.68633 0.143058 9.64296C0.143058 10.5996 0.940251 11.2373 1.73745 11.2373Z" fill="#458FF6"/>
                     </svg>
                 </div>                        
-            </div>
+            </div> -->
             <!-- Закончил блок 8 -->
             <div class="block_9">
                 <h2 >Check out our latest article</h2>
@@ -382,11 +410,15 @@
             <span></span>
         </a>
     </section>
-    <script src="slick-css/slick.min.js"></script>
-    <script>
-          $('.block_7_wrap').slick({
-
-          });
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="/js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $('.block_7_wrap').slick({
+        dots: true,
+        prevArrow: '<div class="slider-arrow slider-arrow_left"></div>',
+        nextArrow: '<div class="slider-arrow slider-arrow_right"></div>'
+        });
     </script>
 </body>
 </html>
