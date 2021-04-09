@@ -287,7 +287,7 @@ button:focus{
 /* Закончил 6 блок */
 .block_7{
     position: relative;
-    margin-bottom: 45px ;
+    margin-bottom: 120px ;
 }
 .block_7_content{
     margin: 0 auto;
@@ -295,6 +295,7 @@ button:focus{
     background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
     border-radius: 24px;
     padding: 64px 0px;
+    position: relative;
 }
 .block_header_7{
     text-align: center;
@@ -305,6 +306,11 @@ button:focus{
     font-size: 36px;
     line-height: 48px;
     color: #ffffff;
+}
+.line_block_7{
+    height: 2px;
+    width: 70px;
+    background-color: #ffffff;
 }
 .block_7_wrapper{
     display: flex;
@@ -506,7 +512,42 @@ button:focus{
     bottom: 0px;
     left: 0px;
 }
-
+/* Настройки слайдера собственные */
+.slider-arrow {
+    position: absolute;
+    width: 29px;
+    height: 20px;
+    z-index: 99;
+}
+.slider-arrow_left:hover{
+    opacity: 1;
+}
+.slider-arrow_right:hover{
+    opacity: 1;
+}
+.slider-arrow_left{
+    background: url(..//img/arrow_left_block_8.svg)  ;
+    left: 425px;
+    bottom: -50px;
+    cursor: pointer;
+    opacity: 0.4;
+}
+.slider-arrow_right{
+    background: url(..//img/arrow_left_block_8.svg) ;
+    right: 415px;
+    bottom: -50px;
+    transform: rotate(180deg) ;
+    cursor: pointer;
+    opacity: 0.4;
+}
+.slick-dots{
+    bottom: -50px;
+}
+.slick-dots li button:before {
+    content: '';
+    background: url(/img/point_block_7.jpg) center no-repeat;
+    opacity: 0.3;
+}
 @media screen and (max-width: 1024px){
     section{
         overflow-x: hidden;
@@ -523,7 +564,6 @@ button:focus{
             font-size: 38px;
             line-height: 49px;
             margin-bottom: 20px;
-
     }
     .points {
         display: none;
@@ -539,7 +579,6 @@ button:focus{
     .block_4_content {
         width: 200px;
         height: 145px;
-
     }
     .block_4 {
         margin-bottom: 190px;
@@ -589,6 +628,16 @@ button:focus{
         width: 960px;
         padding: 36px 0px;
     }
+    .slider-arrow_left{
+        left: 350px;
+    }
+    .slider-arrow_right {
+        left: 580px;
+    }
+    .slick-dots li button:before {
+        content: '';
+        background: url(/img/point_block_7.jpg) center no-repeat;
+        opacity: 0.3;}
     .points_block_7 {
         right: -48px;
     }
@@ -740,6 +789,15 @@ button:focus{
     .block_7_information { 
         flex-direction: column;
     }
+    .edward{
+        margin-left: 13px;
+    }
+    .slider-arrow_left{
+        left: 245px;
+    }
+    .slider-arrow_right {
+        left: 450px;
+    }
     .block_7_content {
         width: 720px;
     }
@@ -800,5 +858,3 @@ button:focus{
     .footer_container {
         width: 720px;
     }
-    
-}
