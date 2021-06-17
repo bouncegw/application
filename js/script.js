@@ -49,40 +49,54 @@ const loadFactor = {
     higt: 1.725 ,
     higtLoad: 1.9
 };
-const numerWeight = humanCharacteristics.inputWeight.value;
-const numerheight = humanCharacteristics.inputHeight.value;
-const numberAge = humanCharacteristics.inputAge.value;
 const formulaCalculation = () =>{
-    return (10 * numerWeight  + 6.25 * numerheight + 5 * numberAge + 5);
+    return (10 * document.getElementById('weight').value  + 6.25 * document.getElementById('height').value + 
+    5 * document.getElementById('age').value);
 } 
 const openTable = () => {
     if(humanCharacteristics.colorieTable){
-        for(let i = 0; i < humanCharacteristics.colorieTable.length; i++){
-            humanCharacteristics.colorieTable[i].style.visibility = 'visible';
-        }
+        humanCharacteristics.colorieTable[0].style.visibility = 'visible';
     }
 }
+const resultAll = () =>{
+    document.getElementById('calories-norm').innerHTML = Math.round(resul) // ОБРАЩАЮСЬ К SPAN ТЕКСТУ
+    document.getElementById('calories-minimal').innerHTML = Math.round(resul - 0.15 * resul)
+    document.getElementById('calories-maximal').innerHTML = Math.round(resul + 0.15 * resul)
+}
 let resul = 0
-const calorieCalculion = () =>{
+const calorieCalculion = () =>{ // Расчет формулы на основании пола нагрузок и данных пользователя
     if(humanCharacteristics.buttonMale.checked === true){
         if(humanCharacteristics.basePhisicalActive.checked === true){
-            resul = formulaCalculation() * loadFactor.min
+            resul = formulaCalculation() * loadFactor.min + 5
         } else if (radioChecked.activeLow.checked === true){
-            resul = formulaCalculation() * loadFactor.low
+            resul = formulaCalculation() * loadFactor.low + 5
         } else if (radioChecked.activeMid.checked === true){
-            resul = formulaCalculation() * loadFactor.mid
+            resul = formulaCalculation() * loadFactor.mid + 5
         } else if (radioChecked.activeHigh.checked === true){
-            resul = formulaCalculation() * loadFactor.higt
+            resul = formulaCalculation() * loadFactor.higt + 5
         } else if (radioChecked.activeVeryHigh.checked === true){
-            resul = formulaCalculation() * loadFactor.higtLoad
+            resul = formulaCalculation() * loadFactor.higtLoad + 5
+        }
+    }else if(humanCharacteristics.buttonFemale.checked === true){
+        if(humanCharacteristics.basePhisicalActive.checked === true){
+            resul = formulaCalculation() * loadFactor.min - 161
+        } else if (radioChecked.activeLow.checked === true){
+            resul = formulaCalculation() * loadFactor.low - 161
+        } else if (radioChecked.activeMid.checked === true){
+            resul = formulaCalculation() * loadFactor.mid - 161
+        } else if (radioChecked.activeHigh.checked === true){
+            resul = formulaCalculation() * loadFactor.higt - 161
+        } else if (radioChecked.activeVeryHigh.checked === true){
+            resul = formulaCalculation() * loadFactor.higtLoad - 161
         }
     }
-    return document.getElementById('calories-minimal').innerHTML = resul // ОБРАЩАЮСЬ К SPAN ТЕКСТУ
+    return resultAll () ;
 };
 
 humanCharacteristics.buttonСalculation.onclick = function() {
     openTable();
     calorieCalculion();
+    event.preventDefault();
 };
 
 // Создаю объект в котором находятся радиокнопки с атрибутом checked
