@@ -27,6 +27,7 @@ humanCharacteristics.inputHeight.oninput = function() {handleChange()};
 humanCharacteristics.inputWeight.oninput = function() {handleChange()};
 // I make a reset button for the parameters
 const resetParameters = () =>{
+    humanCharacteristics.colorieTable[0].style.display = 'none';
     humanCharacteristics.buttonСalculation.disabled = true ;
     humanCharacteristics.buttonClear.disabled = true ;
     humanCharacteristics.inputAge.value = '' ;
@@ -34,11 +35,7 @@ const resetParameters = () =>{
     humanCharacteristics.inputWeight.value = '' ;
     humanCharacteristics.buttonMale.checked = true;
     humanCharacteristics.basePhisicalActive.checked = true;
-    for(let i = 0; i < humanCharacteristics.colorieTable.length; i++){
-        humanCharacteristics.colorieTable[i].style.visibility = 'hidden';
-    };
-    
-};
+};  
 humanCharacteristics.buttonClear.onclick = function() {resetParameters()};
 // i do calorie table
 // Создаю объект нагрузок 
@@ -55,7 +52,7 @@ const formulaCalculation = () =>{
 } 
 const openTable = () => {
     if(humanCharacteristics.colorieTable){
-        humanCharacteristics.colorieTable[0].style.visibility = 'visible';
+        humanCharacteristics.colorieTable[0].style.display = 'block';
     }
 }
 const resultAll = () =>{
@@ -106,9 +103,5 @@ const radioChecked = {
     activeHigh : document.getElementById('activity-high'),
     activeVeryHigh : document.getElementById('activity-maximal')
 };
-const baseResult = {
-    minCalorie: document.getElementById('calories-minimal').innerHTML,
-    normCalorie : document.getElementById('calories-norm').innerHTML,
-    highCalorie : document.getElementById('calories-maximal').innerHTML
-};
+
 
