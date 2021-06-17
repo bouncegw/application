@@ -242,7 +242,7 @@ input[type="number"] {
 
 .counter__result--hidden {
   opacity: 1;
-  visibility: hidden;
+  display: block;
 }
 
 .counter__result > .heading {
